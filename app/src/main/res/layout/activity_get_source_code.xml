@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe9e9e9"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:textSize="26sp"
+        android:layout_margin="5dp"
+        android:textColor="#ff888888"
+        android:gravity="center_vertical"
+        android:text="获取源码" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff000000"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cry" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:textColor="#ff888888"
+        android:textSize="22sp"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:text="作者也不容易，就支持一下嘛" />
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout_integral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff888888"
+                android:textSize="25sp"
+                android:text="您当前积分：" />
+
+            <TextView
+                android:id="@+id/text_integral"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff888888"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/text_ad"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:padding="3dp"
+                android:background="#ffff0000"
+                android:layout_marginLeft="20dp"
+                android:text="获取积分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tip_200"
+            android:text="Tip：满200积分即可下载源码"
+            android:textColor="#ff888888"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@id/layout_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="下载源码"
+            android:id="@+id/text_download"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:padding="2dp"
+            android:textSize="22sp"
+            android:background="#ff888888"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/tip_200"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abc_action_button_min_height_material" />
+
+    </RelativeLayout>
+</LinearLayout>
